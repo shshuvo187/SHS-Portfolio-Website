@@ -2208,11 +2208,11 @@ body{
    }
 
    .resume-items .item-left .info {
-      right: 5px;
+      right: -15px;
    }
 
    .resume-items .item-right .info {
-      left: 30px;
+      left: 20px;
    }
 
    .resume-items .item .info p {
