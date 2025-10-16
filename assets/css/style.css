@@ -120,15 +120,15 @@
       box-shadow: 0 2px 4px hsl(0, 0%, 1%, .1);
    }
 
-   .sue-footer .copy-right{
+   .shs-footer .copy-right{
       color: hsl(var(--hue) 26% 30%);
    }
 
-   .sue-footer .copy-right a{
+   .shs-footer .copy-right a{
       color: hsl(var(--hue) 26% 30%);
    }
 
-   .sue-footer .copy-right a:hover{
+   .shs-footer .copy-right a:hover{
       color: hsl(var(--hue) 0% 0%);
    }
 
@@ -173,23 +173,23 @@ body{
 /* =========================================
    Reusable Styles
 ========================================= */
-.sue-section{
+.shs-section{
    position: relative;
    overflow: hidden;
 }
 
-.sue-container{
+.shs-container{
    max-width: 1170px;
    margin-left: auto;
    margin-right: auto;
 }
 
-.sue-sub-container{
+.shs-sub-container{
    padding-top: 7em;
    padding-bottom: 5em;
 }
 
-.sue-wrapper{
+.shs-wrapper{
    position: relative;
    width: 100%;
    height: 100%;
@@ -328,7 +328,7 @@ body{
 }
 
 /* ========== Buttons ========== */
-.sue-main-btn{
+.shs-main-btn{
    width: fit-content;
    padding: 14px 30px;
    border-radius: 35px;
@@ -336,20 +336,20 @@ body{
    transition: .3s;
 }
 
-.sue-main-btn:hover{
+.shs-main-btn:hover{
    color: var(--white-color);
    background: var(--hover-color);
    border: 2px solid var(--hover-color);
 }
 
-.sue-main-btn a{
+.shs-main-btn a{
    color: var(--color-01);
    font-size: var(--small-font-size);
    font-weight: 500;
    transform: .3s;
 }
 
-.sue-main-btn:hover a{
+.shs-main-btn:hover a{
    color: var(--white-color);
 }
 
@@ -369,7 +369,7 @@ body{
 /* =========================================
    Header
 ========================================= */
-.sue-header{
+.shs-header{
    z-index: var(--z-fixed);
    position: fixed;
    width: 100%;
@@ -379,19 +379,19 @@ body{
    transition: .3s ease;
 }
 
-.sue-header.shrink{
+.shs-header.shrink{
    background: var(--body-color);
    padding: 12px 0;
 }
 
-.sue-header .inner{
+.shs-header .inner{
    width: 100%;
    display: flex;
    align-items: center;
    justify-content: space-between;
 }
 
-.sue-logo a{
+.shs-logo a{
    color: var(--color-01);
    font-size: 2.6rem;
    font-weight: var(--font-semi-bold);
@@ -399,7 +399,7 @@ body{
    transition: .3s;
 }
 
-.sue-logo a:hover{
+.shs-logo a:hover{
    color: var(--hover-color);
 }
 
@@ -667,7 +667,7 @@ body{
    height: 100vh;
 }
 
-.home-container .sue-wrapper{
+.home-container .shs-wrapper{
    display: flex;
    justify-content: center;
    align-items: center;
@@ -1753,13 +1753,13 @@ body{
 /* =========================================
    Footer
 ========================================= */
-.sue-footer{
+.shs-footer{
    background: var(--footer-bg);
    padding-top: 100px;
    padding-bottom: 165px;
 }
 
-.sue-footer .sue-container .inner{
+.shs-footer .shs-container .inner{
    display: flex;
    justify-content: center;
    align-items: center;
@@ -1791,13 +1791,13 @@ body{
    background: var(--color-01);
 }
 
-.sue-footer .copy-right{
+.shs-footer .copy-right{
    color: var(--color-04);
    font-size: var(--small-font-size);
    margin-top: 10px;
 }
 
-.sue-footer .copy-right a:hover{
+.shs-footer .copy-right a:hover{
    color: var(--color-01);
    transition: .3s;
 }
@@ -1810,7 +1810,7 @@ body{
       display: none;
    }
 
-   .sue-container {
+   .shs-container {
       max-width: 1075px;
    }
 
@@ -1824,7 +1824,7 @@ body{
    Media Queries (max-width: 1200px)
 ========================================= */
 @media screen and (max-width: 1200px){
-   .sue-container {
+   .shs-container {
       max-width: 100%;
       margin-left: 50px;
       margin-right: 50px;
@@ -1955,12 +1955,12 @@ body{
       --tiny-font-size: .88rem;
    }
 
-   .sue-container {
+   .shs-container {
       margin-left: 25px;
       margin-right: 25px;
    }
 
-   .sue-logo a{
+   .shs-logo a{
       font-size: 2.35rem;
    }
 
@@ -2088,12 +2088,12 @@ body{
       --tiny-font-size: .85rem;
    }
 
-   .sue-container {
+   .shs-container {
       margin-left: 20px;
       margin-right: 20px;
    }
 
-   .sue-header {
+   .shs-header {
       padding: 20px 0;
    }
 
@@ -2101,7 +2101,7 @@ body{
       column-gap: 15px;
    }
 
-   .home-container .sue-wrapper {
+   .home-container .shs-wrapper {
       flex-direction: column-reverse;
    }
 

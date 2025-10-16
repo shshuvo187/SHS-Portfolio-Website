@@ -140,7 +140,7 @@ portfolioCardWithModals.forEach((portfolioCardWithModal) => {
 /* =====================================================
    Testimonial Swiper
 ===================================================== */
-var swiper = new Swiper(".sue-client-swiper", {
+var swiper = new Swiper(".shs-client-swiper", {
       slidesPerView: 1,
       spaceBetween: 30,
       loop: true,
@@ -164,25 +164,25 @@ var swiper = new Swiper(".sue-client-swiper", {
    });
 })();
 
-sueContactForm = document.getElementById("sue-contact-form");
-sueContactFormAlert = document.querySelector(".contact-form-alert");
+shsContactForm = document.getElementById("shs-contact-form");
+shsContactFormAlert = document.querySelector(".contact-form-alert");
 
-sueContactForm.addEventListener('submit', function(event) {
+shsContactForm.addEventListener('submit', function(event) {
    event.preventDefault();
    // these IDs from the previous steps
-   emailjs.sendForm('service_3yycvh6', 'template_ub7cig8', '#sue-contact-form')
+   emailjs.sendForm('service_3yycvh6', 'template_ub7cig8', '#shs-contact-form')
          .then(() => {
             // console.log('SUCCESS!');
-            sueContactFormAlert.innerHTML = "<span>Your message has been sent successfully!</span> <i class='ri-checkbox-circle-fill'></i>";
-            sueContactForm.reset();
+            shsContactFormAlert.innerHTML = "<span>Your message has been sent successfully!</span> <i class='ri-checkbox-circle-fill'></i>";
+            shsContactForm.reset();
 
             setTimeout(() => {
-               sueContactFormAlert.innerHTML = "";
+               shsContactFormAlert.innerHTML = "";
             }, 5000);
          }, (error) => {
             // console.log('FAILED...', error);
-             sueContactFormAlert.innerHTML = "<span>Message not sent</span> <i class='ri-error-warning-fill'></i>";
-             sueContactFormAlert.title = error;
+             shsContactFormAlert.innerHTML = "<span>Message not sent</span> <i class='ri-error-warning-fill'></i>";
+             shsContactFormAlert.title = error;
          });
 });
 
@@ -190,9 +190,9 @@ sueContactForm.addEventListener('submit', function(event) {
    Shrink the height of the header on scroll
 ===================================================== */
 window.addEventListener("scroll", () => {
-   const sueHeader = document.querySelector(".sue-header");
+   const shsHeader = document.querySelector(".shs-header");
 
-   sueHeader.classList.toggle("shrink", window.scrollY > 0);
+   shsHeader.classList.toggle("shrink", window.scrollY > 0);
 });
 
 /* =====================================================
@@ -309,7 +309,7 @@ document.addEventListener("mousemove", (e) => {
 });
 
 // Cursor effects on hover website elements.
-const cursorHoverlinks = document.querySelectorAll("body a, .theme-btn, .sue-main-btn, .portfolio-card, .swiper-button-next, .swiper-button-prev, .swiper-pagination-bullet, .service-card, .contact-social-links li, .contact-form .submit-btn, .menu-show-btn, .menu-hide-btn");
+const cursorHoverlinks = document.querySelectorAll("body a, .theme-btn, .shs-main-btn, .portfolio-card, .swiper-button-next, .swiper-button-prev, .swiper-pagination-bullet, .service-card, .contact-social-links li, .contact-form .submit-btn, .menu-show-btn, .menu-hide-btn");
 
 cursorHoverlinks.forEach((cursorHoverlink) => {
    cursorHoverlink.addEventListener("mouseover", () => {
@@ -341,13 +341,13 @@ themeBtn.addEventListener("click", () => {
    const getCurrentIcon = () => themeBtn.classList.contains("active-sun-icon") ? "sun" : "moon";
    const getCurrentTheme = () => document.body.classList.contains("light-theme") ? "light" : "dark";
 
-   localStorage.setItem("sue-saved-icon", getCurrentIcon());
-   localStorage.setItem("sue-saved-theme", getCurrentTheme());
+   localStorage.setItem("shs-saved-icon", getCurrentIcon());
+   localStorage.setItem("shs-saved-theme", getCurrentTheme());
 });
 
 // Get saved theme icon and theme on document loaded.
-const savedIcon = localStorage.getItem("sue-saved-icon");
-const savedThem = localStorage.getItem("sue-saved-theme");
+const savedIcon = localStorage.getItem("shs-saved-icon");
+const savedThem = localStorage.getItem("shs-saved-theme");
 
 document.addEventListener("DOMContentLoaded", () => {
    themeBtn.classList[savedIcon === "sun" ? "add" : "remove"]("active-sun-icon");
@@ -371,9 +371,9 @@ ScrollReveal().reveal('.avatar-img', { delay: 100, origin: 'top' });
 ScrollReveal().reveal('.avatar-info, .section-title', { delay: 300, origin: 'top' });
 ScrollReveal().reveal('.home-social, .home-scroll-btn, .copy-right ', { delay: 600, origin: 'bottom' });
 ScrollReveal().reveal('.about-img', { delay: 700, origin: 'top' });
-ScrollReveal().reveal('.about-info, .sue-footer .sue-logo', { delay: 300, origin: 'bottom' });
-ScrollReveal().reveal('.pro-card, .about-buttons .sue-main-btn, .resume-tabs .tab-btn, .portfolio-tabs .tab-btn', { delay: 500, origin: 'right', interval: 200 });
+ScrollReveal().reveal('.about-info, .shs-footer .shs-logo', { delay: 300, origin: 'bottom' });
+ScrollReveal().reveal('.pro-card, .about-buttons .shs-main-btn, .resume-tabs .tab-btn, .portfolio-tabs .tab-btn', { delay: 500, origin: 'right', interval: 200 });
 ScrollReveal().reveal('#resume .section-content', { delay: 700, origin: 'bottom' });
 ScrollReveal().reveal('.service-card, .portfolio-card, .contact-item, .contact-social-links li, .footer-menu .menu-item', { delay: 300, origin: 'bottom' , interval: 300 });
-ScrollReveal().reveal('.sue-client-swiper, .contact-form-body', { delay: 700, origin: 'right' });
+ScrollReveal().reveal('.shs-client-swiper, .contact-form-body', { delay: 700, origin: 'right' });
 ScrollReveal().reveal('.contact-info h3', { delay: 100, origin: 'bottom', interval: 300 });
