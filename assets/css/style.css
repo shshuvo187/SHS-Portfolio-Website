@@ -1009,7 +1009,7 @@ body{
 .resume-items .item .info p{
    color: var(--color-04);
    font-size: var(--small-font-size);
-   white-space: nowrap;
+   white-space: break-spaces;
    margin-bottom: 18px;
 }
 
